@@ -32,3 +32,9 @@ a:link, a:visited, a:hover, a:active {
   display: block;
   width: 100%;
 }
+.item .category {
+  margin: 15px 9px 10px;
+  color: #aaa;
+  letter-spacing: 1px;
+  font-family: Trebuchet MS, Hiragino Kaku Gothic ProN;, Meiryo, sans-serif;
+}
