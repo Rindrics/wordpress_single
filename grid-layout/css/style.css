@@ -30,38 +30,33 @@ a:link, a:visited, a:hover, a:active {
   overflow: hidden;
 }
 .item .image {
-  display: block;
-  width: 100%;
-  height: 109px;
+  position: relative;
 }
-.item > a::before {
+.item .image img{
+  width: 100%;
+}
+.item > a .image::before {
   content: '';
   position: absolute;
-  top: 8px;
-  right: 8px;
-  left: 8px;
-  display: block;
-  height: 109px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background: rgba(0, 0, 0, 0.5);
   opacity: 0;
   transition: opacity 0.3s linear;
 }
-.item > a:hover::before {
+.item > a:hover .image::before {
   opacity: 1;
 }
-.item-m > a::before {
-  height: 146px;
-}
-.item-l > a::before {
-  height: 403px;
-}
-.item > a::after {
+.item > a .image::after {
   content: 'MORE';
   position: absolute;
-  top: 43.5px;
+  top: 50%;
   left: 150%;
   display: block;
   width: 100px;
+  margin-top: -19px;
   margin-left: -50px;
   padding: 8px;
   border: 3px solid #fff;
@@ -73,15 +68,9 @@ a:link, a:visited, a:hover, a:active {
   opacity: 0;
   transition: all 0.3s ease-in-out;
 }
-.item > a:hover::after {
+.item > a:hover .image::after {
   left: 50%;
   opacity: 1;
-}
-.item-m > a::after {
-  top: 62px;
-}
-.item-l > a::after {
-  top: 190.5px;
 }
 .item .category {
   margin: 15px 9px 10px;
