@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
   <title>シングルページレイアウト</title>
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:700,400">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/normalize.css">
+  <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/style.css'); ?>">
 </head>
 <body>
   <header class="header">
@@ -31,7 +31,7 @@
     <h2 class="heading">WORKS</h2>
     <div class="works-wrapper">
       <div class="work-box tree">
-        <img class="work-image" src="images/tree.jpg" alt="制作事例1">
+        <img class="work-image" src="<?php bloginfo('stylesheet_directory'); ?>/images/tree.jpg" alt="制作事例1">
         <div class="work-description">
           <div class="work-description-inner">
             <p class="work-text">
@@ -44,7 +44,7 @@
         </div>
       </div>
       <div class="work-box building">
-        <img class="work-image" src="images/building.jpg" alt="制作事例,">
+        <img class="work-image" src="<?php bloginfo('stylesheet_directory'); ?>/images/building.jpg" alt="制作事例,">
         <div class="work-description">
           <div class="work-description-inner">
             <p class="work-text">
@@ -57,7 +57,7 @@
         </div>
       </div>
       <div class="work-box lake">
-        <img class="work-image" src="images/lake.jpg" alt="制作事例3">
+        <img class="work-image" src="<?php bloginfo('stylesheet_directory'); ?>/images/lake.jpg" alt="制作事例3">
         <div class="work-description">
           <div class="work-description-inner">
             <p class="work-text">
@@ -70,7 +70,7 @@
         </div>
       </div>
       <div class="work-box sky">
-        <img class="work-image" src="images/sky.jpg" alt="制作事例4">
+        <img class="work-image" src="<?php bloginfo('stylesheet_directory'); ?>/images/sky.jpg" alt="制作事例4">
         <div class="work-description">
           <div class="work-description-inner">
             <p class="work-text">
